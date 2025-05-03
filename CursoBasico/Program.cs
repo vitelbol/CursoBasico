@@ -1,19 +1,30 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int num1 = 10;
-int num2 = 10;
-int num3 = 30;
-int num4 = 40;
+string texto1 = "Hola";
+string texto2 = "hola";
+if (texto1 == texto2)
+{
+    Console.WriteLine("Texto 1 es igual que texto 2");
+}
+else
+{
+    Console.WriteLine("Texto 1 es diferente que texto 2");
+}
+if (texto1.Equals(texto2))
+{
+    Console.WriteLine("Texto 1 es igual que texto 2");
+}
+else
+{
+    Console.WriteLine("Texto 1 es diferente que texto 2");
+}
 
-if (num1 == num2)
+char caracter1 = 'a';
+char caracter2 = 'a';
+if (caracter1 == caracter2)
 {
-    Console.WriteLine(num1 + " es igual que " + num2);
-} else if (num1 == num3)
+    Console.WriteLine("Caracter1 es igual a caracter2");
+}
+else
 {
-    Console.WriteLine(num1 + " es igual que " + num3);
-} else if (num1 == num4)
-{
-    Console.WriteLine(num1 + " es igual que " + num4);
-}else
-{
-    Console.WriteLine(num1 + " no es igual que los otros numeros");
+    Console.WriteLine("Caracter2 es diferente a caracter2");
 }
