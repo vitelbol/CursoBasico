@@ -1,57 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
-int cajaentero = 15;
-int cajaenteronegativo = -4;
-int cajaentero2 = 1000;
-double materia_Mate = 4.5;
-double materia_espaniol = 8;
-decimal dinero = (decimal) 250.7652315; //valor decimal
-decimal dineroMio = 630.12354872M; //valor decimal
-char letra = 'd';
-string Texto_5 = "Hola soy jose";
-bool verdadero = true;
-bool falso = false;
-/*
-Console.WriteLine(cajaentero);
-Console.WriteLine(cajaenteronegativo);
-Console.WriteLine(cajaentero2);
-Console.WriteLine(materia_Mate);
-Console.WriteLine(materia_espaniol);
-Console.WriteLine(dinero);
-Console.WriteLine(dineroMio);
-Console.WriteLine(letra);
-Console.WriteLine(Texto_5);
-Console.WriteLine(verdadero);
-Console.WriteLine(falso);*/
-//condicion igual que ==
-if (cajaentero == cajaentero2)
+int num1 = 10;
+int num2 = 10;
+int num3 = 30;
+int num4 = 40;
+
+if (num1 == num2)
 {
-    Console.WriteLine("son iguales");
-} else
+    Console.WriteLine(num1 + " es igual que " + num2);
+} else if (num1 == num3)
 {
-    Console.WriteLine("No son iguales " +cajaentero + " y " + cajaentero2);
-}
-//condicion diferente !=
-if (cajaentero != cajaentero2) 
+    Console.WriteLine(num1 + " es igual que " + num3);
+} else if (num1 == num4)
 {
-    Console.WriteLine("Son diferentes");
-}
-//condicion menor que <
-if (cajaentero < cajaentero2)
-{
-    Console.WriteLine(cajaentero + " es menor que "+ cajaentero2);
-}
-//condicion mayor que 
-if (cajaentero > cajaentero2)
-{
-    Console.WriteLine(cajaentero + " es mayor que "+ cajaentero2);
+    Console.WriteLine(num1 + " es igual que " + num4);
 }else
 {
-    Console.WriteLine(cajaentero + " es menor que "+ cajaentero2);
+    Console.WriteLine(num1 + " no es igual que los otros numeros");
 }
-//uso de bool para condicion
-if (verdadero == true)
-{
-    Console.WriteLine("Es verdadero");
-}
-else
-    Console.WriteLine("Es falsa");
