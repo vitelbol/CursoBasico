@@ -6,6 +6,16 @@ namespace CursoBasico
     {
         static void Main(string[] args)
         {
+            //numeros aleatorios
+            Random random = new Random();
+
+            int numerorandom = random.Next(0, 10000);
+            Console.WriteLine(numerorandom);
+            double numdecimalesrandom = random.NextDouble();
+            Console.WriteLine(numdecimalesrandom);
+            Console.WriteLine(numerorandom+ numdecimalesrandom);
+            /*
+             * 
             //operadores logico
             int num1 = 5;
             int num2 = 4;
@@ -28,7 +38,7 @@ namespace CursoBasico
             {
                 Console.WriteLine("La opcion es verdadera");
             }
-            /*
+            
             //codigo principal
             int num = 5;
             int num2 = 46;
@@ -44,8 +54,8 @@ namespace CursoBasico
             FuncionPorRef(ref num, hola, ref texto1);
             Console.WriteLine("Funcion principal " + num);
             */
-            
-            
+
+
         }
         /*
         static void Saludar(string nombre)
