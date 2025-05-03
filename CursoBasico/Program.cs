@@ -1,30 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
-string texto1 = "Hola";
-string texto2 = "hola";
-if (texto1 == texto2)
+int numero = 1;
+/*
+while(numero <5)
 {
-    Console.WriteLine("Texto 1 es igual que texto 2");
+    //El codigo que este aqui se va a ejecturar mientras la condicion del ciclo se cumpla
+    Console.WriteLine(numero + "antes de la suma");
+    numero = numero + 1;
+    Console.WriteLine(numero + "despues de la suma");
 }
-else
+do
 {
-    Console.WriteLine("Texto 1 es diferente que texto 2");
-}
-if (texto1.Equals(texto2))
+    numero+=1;
+    Console.WriteLine(numero);
+} while (numero < 3);*/
+for (int cont = 0; cont <5; cont++)
 {
-    Console.WriteLine("Texto 1 es igual que texto 2");
-}
-else
-{
-    Console.WriteLine("Texto 1 es diferente que texto 2");
-}
-
-char caracter1 = 'a';
-char caracter2 = 'a';
-if (caracter1 == caracter2)
-{
-    Console.WriteLine("Caracter1 es igual a caracter2");
-}
-else
-{
-    Console.WriteLine("Caracter2 es diferente a caracter2");
+    Console.WriteLine(cont);
 }
