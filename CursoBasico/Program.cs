@@ -1,4 +1,59 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System;
+namespace CursoBasico
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //codigo principal
+            int num = 5;
+            int num2 = 46;
+            int numero = 74;
+            decimal dec = (decimal)10.2;
+            string  hola= "hola";
+            string texto1 = "curso de programacion";
+
+            Console.WriteLine("Codigo principal");
+            FuncionPorValor(num, numero, dec);
+            Console.WriteLine("Funcion principal "+num);
+            Console.WriteLine("\n-------------------------------\n");
+            FuncionPorRef(ref num, hola, ref texto1);
+            Console.WriteLine("Funcion principal " + num);
+
+            
+            
+        }
+        static void Saludar(string nombre)
+        {
+            //Codigo que se ejecuta esta funcion
+            Console.WriteLine("Hola usuario");
+        }
+        static void FuncionPorValor(int num, int numero, decimal dec)
+        {
+            num = num * 2;
+            Console.WriteLine("Valor de num dentro de la funcion por valor " + num+ " "+ numero+ " "+ dec);
+        }
+        static int Devolvernumero()
+        {
+            //funcion que regresa un numero
+            int num1 = 2;
+            int num2 = 9;
+            int resultado = num1 + num2;
+            return resultado;
+        }
+        static void FuncionPorRef(ref int num, string hola, ref string texto1)
+        {
+            num = num * 2;
+            Console.WriteLine("Valor de num dentro de la funcion por referencia " + num+ " "+hola+" "+texto1);
+        }
+
+
+
+    }
+    
+}
+
 /*int numero = 1;
 
 while(numero <5)
@@ -32,7 +87,7 @@ string textonum2 = "";
 textonum2 = Console.ReadLine();
 num2 = Convert.ToInt32(textonum2);
 int resultado_suma = num1 + num2;
-Console.WriteLine("El resultado de la suma es: "+resultado_suma);*/
+Console.WriteLine("El resultado de la suma es: "+resultado_suma);
 
 //areglos
 int[] arreglo1 = new int[4];
@@ -44,4 +99,4 @@ arreglo1[3] = 40;
 for (int cont = 0; cont < arreglo1.Length; cont++)
 {
     Console.WriteLine(arreglo1[cont]);
-}
+}*/
