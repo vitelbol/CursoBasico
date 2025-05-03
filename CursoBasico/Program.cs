@@ -10,6 +10,7 @@ char letra = 'd';
 string Texto_5 = "Hola soy jose";
 bool verdadero = true;
 bool falso = false;
+/*
 Console.WriteLine(cajaentero);
 Console.WriteLine(cajaenteronegativo);
 Console.WriteLine(cajaentero2);
@@ -20,4 +21,37 @@ Console.WriteLine(dineroMio);
 Console.WriteLine(letra);
 Console.WriteLine(Texto_5);
 Console.WriteLine(verdadero);
-Console.WriteLine(falso);
+Console.WriteLine(falso);*/
+//condicion igual que ==
+if (cajaentero == cajaentero2)
+{
+    Console.WriteLine("son iguales");
+} else
+{
+    Console.WriteLine("No son iguales " +cajaentero + " y " + cajaentero2);
+}
+//condicion diferente !=
+if (cajaentero != cajaentero2) 
+{
+    Console.WriteLine("Son diferentes");
+}
+//condicion menor que <
+if (cajaentero < cajaentero2)
+{
+    Console.WriteLine(cajaentero + " es menor que "+ cajaentero2);
+}
+//condicion mayor que 
+if (cajaentero > cajaentero2)
+{
+    Console.WriteLine(cajaentero + " es mayor que "+ cajaentero2);
+}else
+{
+    Console.WriteLine(cajaentero + " es menor que "+ cajaentero2);
+}
+//uso de bool para condicion
+if (verdadero == true)
+{
+    Console.WriteLine("Es verdadero");
+}
+else
+    Console.WriteLine("Es falsa");
