@@ -6,6 +6,28 @@ namespace CursoBasico
     {
         static void Main(string[] args)
         {
+            //switch con opciones de tipo caracter
+            Console.WriteLine("Elige una de las opciones: ");
+            Console.WriteLine("a) Imprimir Hola Mundo ");
+            Console.WriteLine("b) Imprimir suma de dos numeros ");
+            Console.WriteLine("c) Imprimir nada");
+            char opcion =Convert.ToChar(Console.ReadLine());
+            switch(opcion)
+            {
+                case 'a': Console.WriteLine("Hola Mundo");
+                    break;
+                case 'b':
+                    int num1 = 3;
+                    int num2 = 7;
+                    int resultado = num1 + num2;
+                    Console.WriteLine(resultado);
+                    break;
+                case 'c': Console.WriteLine("nada");
+                    break;
+                default: Console.WriteLine("No se selecciono ninguna de las opciones");
+                    break ;
+            };
+            /*
             //numeros aleatorios
             Random random = new Random();
 
@@ -14,7 +36,7 @@ namespace CursoBasico
             double numdecimalesrandom = random.NextDouble();
             Console.WriteLine(numdecimalesrandom);
             Console.WriteLine(numerorandom+ numdecimalesrandom);
-            /*
+            
              * 
             //operadores logico
             int num1 = 5;
