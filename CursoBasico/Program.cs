@@ -6,6 +6,29 @@ namespace CursoBasico
     {
         static void Main(string[] args)
         {
+            //operadores logico
+            int num1 = 5;
+            int num2 = 4;
+            if(num1 == 5 || num2 ==7)
+            {
+                Console.WriteLine("Las condiciones son verdaderas");
+            }
+            else
+            {
+                Console.WriteLine("Las condiciones son falsas");
+            }
+
+            //not
+            bool opcion = true;
+            if(!opcion)
+            {
+                Console.WriteLine("La opcion es falsa");
+            }
+            else
+            {
+                Console.WriteLine("La opcion es verdadera");
+            }
+            /*
             //codigo principal
             int num = 5;
             int num2 = 46;
@@ -20,10 +43,11 @@ namespace CursoBasico
             Console.WriteLine("\n-------------------------------\n");
             FuncionPorRef(ref num, hola, ref texto1);
             Console.WriteLine("Funcion principal " + num);
-
+            */
             
             
         }
+        /*
         static void Saludar(string nombre)
         {
             //Codigo que se ejecuta esta funcion
@@ -47,7 +71,7 @@ namespace CursoBasico
             num = num * 2;
             Console.WriteLine("Valor de num dentro de la funcion por referencia " + num+ " "+hola+" "+texto1);
         }
-
+        */
 
 
     }
